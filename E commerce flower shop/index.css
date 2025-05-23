@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border: none; outline: none;
+    text-transform: capitalizes;
+    transition: 0.2s linear;
+}
+
+:root{
+    --pink:#e84393;
+}
+
+header{
+    position: fixed;
+    top: 0; right: 0;left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    box-shadow:0 0.5rem 1rem black;
+    background-color: #fff;
+
+}
+header .logo{
+    font-size:2.5rem ;
+    
+    font-weight: bolder;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+
+}
+header .navbar a:hover{
+    color: #e84393;
+}
+header .icons a{
+    font-size: 2rem;
+
+}
+header .icons a:hover{
+    color: #e84393;
+}
+
+section{
+    margin-top: 130px;
+    padding: 2rem 9%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    background-image: url(./image/banner\ img.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.home .content h3{
+    font-size: 5rem;
+    color:#333;
+
+}
+.home .content span{
+    font-size: 3rem;
+    color: #e84393;
+}
+.home .content p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.btn{
+   border: 2px solid black;
+   border-radius: 30px;
+   padding: 10px;
+   color:white;
+   font-weight: 600;
+   margin-top: 5px;
+   background-color:black;
+}
+.btn:hover{
+    background-color: #e84393;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: #f5c4db;
+}
+.heading span{
+    color: #e84393;
+
+}
+
+ .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem; */
+
+ }
+
+.about .row .vedioContainer{
+    flex: 1 1 40rem;
+    position: relative;
+
+}
+.about .row .vedioContainer video{
+    width: 100%;
+    border: 1rem solid white;
+    border-radius: 0.5rem;
+    height: 100%;
+    object-fit: cover;
+}
+.content{
+    flex: 1 1 40rem;
+}
+
+.about .row .vedioContainer h3{
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: white;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    
+
+}
+.content h3{
+    font-size: 2rem;
+}
+ .content p{
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 30px;
+ }
+.iconContainer{
+    display: flex;
+    background-color: #eee;
+    flex-wrap: wrap;
+    border: 2px;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+
+}
+.iconContainer .icons{
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-around;
+    
+    
+    align-items: center;
+    padding: 2rem;
+    margin: 10px; 
+   border: 1rem solid rgb(0, 0, 0 ,.1);
+    flex: 1 1 35rem;
+
+} 
+.iconContainer .icons a{
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+.iconContainer .icons h3{
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+.icons span{
+    font-size: 1rem;
+    color: #555;
+} 
+/* product */
+.products .boxContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+   gap:10px;
+
+}
+.products .boxContainer .box{
+    /* flex: 1 1 30rem; */
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, .2);
+    border-radius: .5rem;
+    border: .1rem solid  rgb(0, 0, 0, .2) ;
+     /* position: relatives; */
+     height: 500px;
+     margin-top: 30px;
+} 
+/* .products .boxContainer .box .discount{
+    position: absolute;
+    top: 1rem;left: 1rem;
+    font-size: 2rem;
+    padding: .7rem 1rem;
+    color: #e84393;
+    background-color: #555;
+} */
+.products .boxContainer .box .image{
+    text-align: center;
+    /* padding-top: 2rem; */
+    overflow: hidden;
+    position: relative;
+}
+
+.products .boxContainer .box:hover .image img{
+    transform: scale(1.1);
+}
+.products .boxContainer .box .image .icons{
+    /* position: absolute;
+    bottom: 0;left: 0;right: 0; */
+
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.products .boxContainer .box .image .icons .cart btn{
+    text-align: center;
+}
+.products .boxContainer .box .content{
+    text-align: center;
+}
+/* products .boxContainer .box .content h3{
+    font-size: 2rem;
+    color: #333;
+
+} */
+ .review .boxContainer{
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+   
+ }
+ .review .user img{
+    height: 80px;
+    width: 80px;
+    border: 1px ;
+    border-radius: 100%;
+ }
+ .review .boxContainer .reviewBox{
+    height: 320px;
+    width: 390px;
+    gap: 12px;
+    border: 2px solid  rgb(0, 0, 0, .3) ;
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, .3);
+    border-radius: 8px;
+    
+    
+ }
+ .review .user{
+    display: flex;
+ }
+ 
+ .stars{
+    color: #df1577;
+    padding: 15px;
+ }
+.reviewBox p{
+    padding: 15px;
+    line-height: 1.5rem;
+    color: #555;
+}
+.reviewBox .user .userInfo{
+    padding: 10px;
+}
+.contact .row{
+    display: grid;
+   grid-template-columns: auto auto;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    /* padding: 5px; */
+    box-shadow: 0.5rem 1.5rem rgb(0, 0, 0, .1);
+    border: 2px solid rgb(0, 0, 0, .1);
+    background-color: #fff;
+    height: 500px;
+
+
+}
+.contact .row image{
+    flex: 1 1 40rem;
+    border: 0.1rem solid rgb(0, 0, 0, .1);
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    border: 0.1rem solid rgb(0, 0, 0, .2);
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    width: 600px;
+    box-shadow: 8px rgb(0, 0, 0, .1)
+    
+}
+.contact .row form .box:focus{
+    border-color: #e84393;
+}
+
+.contact .row form  textarea{
+    height: 120px;
+}
+.footer .boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem;
+    color: #e2aac5;
+    border:  rgb(0, 0, 0, .1) 1px solid;
+}
+.footer .boxContainer .box{
+    flex: 1 1 15rem;
+      /* background-color: #333; */
+
+}
+.footer .boxContainer .box h3{
+  
+    color: black;
+    font-size: 2.1rem;
+    padding: 2px;
+}
+.footer .boxContainer .box a{
+    display: block;
+    color: #333;
+    font-size: 1.3rem;
+    padding: 2px;
+
+}
+.footer .boxContainer .box a:hover{
+    color: #df1577;
+}
